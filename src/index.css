@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.headerTable {
+    border: solid;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.columnHeader {
+    padding: 10px 35px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.projectsAnchor {
+    display: block;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.projectTable {
+    margin: 0 auto;
+}
+
+.projectTitle {
+    margin: 10px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.projectTitle:hover {
+    color: blue;
+}
+
+img{
+    width: 100%;
+}
+
