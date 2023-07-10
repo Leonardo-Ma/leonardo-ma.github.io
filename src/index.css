@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 .headerTable {
@@ -23,8 +24,18 @@ body {
     font-weight: bold;
 }
 
-.projectTable {
-    margin: 0 auto;
+.projectContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
 }
 
 .projectTitle {
@@ -33,12 +44,16 @@ body {
     text-align: center;
 }
 
-.projectTitle:hover {
-    color: blue;
+.projectDescription {
+    text-align: justify;
 }
 
-img{
+img {
     width: 100%;
     height: auto;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
