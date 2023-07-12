@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="/src/index.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./src/templates.js"></script>
         <title>Portfolio</title>
     </head>
 
@@ -23,41 +24,26 @@
         <a class="projectsAnchor" name="projetos">Projetos</a> <!-- Anchor -->
 
         <div class="projectContainer">
-            <a href="https://github.com/Leonardo-Ma/femasschat">
-                <div class="project">
-                    <h2 class="projectTitle">Agenda</h2>
-                    <div class="projectImage">
-                        <img src="/./assets/Agenda.png" alt="Imagem de um protótipo de agenda">
-                    </div>
-                    <p class="projectDescription">Projeto requisitado pelo professor de desenvolvimento mobile como
-                        requisito
-                        para conclusão de disciplina.</p>
-                </div>
-            </a>
+            <project-element projectTitle="Agenda" githubUrl="https://github.com/Leonardo-Ma/femasschat" dockerUrl=""
+                projectDescription="Projeto requisitado pelo professor de desenvolvimento mobile como
+            requisito para conclusão de disciplina." imgFile="Agenda.png" imgAlt="Imagem de um protótipo de agenda">
+            </project-element>
+            <!-- TODO: Add docker URL-->
+            <project-element projectTitle="Loja de Violão" githubUrl="https://github.com/Leonardo-Ma/Loja-Violao"
+                dockerUrl="" projectDescription="Projeto requisitado pelo professor de programação como requisito para
+            conclusão de disciplina." imgFile="LojaViolao.png" imgAlt="Imagem da home do sistema">
+            </project-element>
 
-            <a href="https://github.com/Leonardo-Ma/Loja-Violao">
-                <div class="project">
-                    <h2 class="projectTitle">Loja de Violão</h2>
-                    <div class="projectImage">
-                        <img src="/./assets/LojaViolao.png" alt="Loja de Violão Project Image">
-                    </div>
-                    <p class="projectDescription">Projeto requisitado pelo professor de programação como requisito para
-                        conclusão de disciplina.</p>
-                </div>
-            </a>
-
-            <a href="https://github.com/Leonardo-Ma/computacaoNuvem">
-                <div class="project">
-                    <h2 class="projectTitle">Computação em Nuvem</h2>
-                    <div class="projectImage">
-                        <img src="/./assets/ComputacaoNuvem.png" alt="Computação em Nuvem Project Image">
-                    </div>
-                    <p class="projectDescription">Implementação do Front-End utilizando HTML e CSS para uma página que
-                        será
-                        hospedada utilizando o AWS Amplify.</p>
-                </div>
-            </a>
+            <!-- TODO: Add docker URL-->
+            <project-element projectTitle="Computação em Nuvem"
+                githubUrl="https://github.com/Leonardo-Ma/computacaoNuvem" dockerUrl="" projectDescription="Implementação do Front-End utilizando HTML e CSS para uma página que
+        será hospedada utilizando o AWS Amplify." imgFile="ComputacaoNuvem.png" imgAlt="Site estático de tela única">
+            </project-element>
+            <!-- TODO: Add docker URL-->
         </div>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 
 </html>
